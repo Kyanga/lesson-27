@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+</head>
+<body>
+    <h2>Array Mapping</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        function myfunction(a){
+            return a*10;
+        }
+        num=[6,10,8,20,12];
+        document.getElementById("p1").innerHTML="Original Array is " + num;
+
+        document.getElementById("p2").innerHTML="Mapped array is " + num.map(myfunction);
+    </script>
+</body>
+</html>
