@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <button onclick="ascending()">Ascending</button>
+    <button onclick="descending()">Descending</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        var num=[2,7,6,8,3,10,4,60,100,1];
+        document.getElementById("p1").innerHTML=num;
+        function ascending(){
+            num.sort(function(a,b){return a-b});
+            document.getElementById("p2").innerHTML="Array in ascending order"+num;
+        }
+        function descending(){
+            document.getElementById("p1").innerHTML = num;
+            num.sort(function (a,b){return b-a});
+            document.getElementById("p3").innerHTML ="Array in descending order"+num;
+        }
+    </script>
+</body>
+</html>
